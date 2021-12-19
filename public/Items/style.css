@@ -55,10 +55,8 @@ input[type="button"] {}
 .random-background {
   background-color: #36a88e;
   /*top colour*/
-  background-image: -webkit-linear-gradient(top, #36a88e, #f35b47);
-  background-image: -moz-linear-gradient(top, #36a88e, #f35b47);
-  background-image: -o-linear-gradient(top, #36a88e, #f35b47);
-  background-image: linear-gradient(to bottom, #36a88e, #f35b47);
+  background-image: -webkit-linear-gradient(top, #36a88e, rgba(0, 0, 0, 0.74));
+ 
   height: 115vh;
   width: 100vw;
 }
@@ -316,6 +314,10 @@ i.fa-star.rating{color: #36a88e;;}
   text-decoration: none;
 }
 
+.product-popup-manufacturer{
+  display: none;
+}
+
 .cart_button{
   border-radius: 5px;
   border: 1px solid #36a88e;
@@ -357,3 +359,4 @@ i.fa-star.rating{color: #36a88e;;}
 .hidden {
   display: none;
 }
+
