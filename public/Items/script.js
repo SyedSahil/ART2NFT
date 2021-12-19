@@ -7,12 +7,36 @@ function OpenProduct(i){
     x.style.visibility = "hidden";
   }
 
+  var cardManufacturer = document.querySelectorAll(`.product-popup-manufacturer[data-item='${i}']`);
+  const manufacturer = cardManufacturer[0].innerHTML;
+
+  const man = document.getElementsByClassName('product-manufacturer');
+  man[0].innerHTML = manufacturer;
+
+  var cardTitle = document.querySelectorAll(`.product-title[data-item='${i}']`);
+ 
+  const title = cardTitle[0].innerHTML;
+  //console.log(title);
+  
+  const el = document.getElementsByClassName('product-popup-title');
+  
+  //console.log(el[0].innerHTML);
+  el[0].innerHTML = title
+  //onsole.log(el[0].innerHTML);
+
+
+  
+  
+
   var i = $('.product-image[item-data="'+i+'"] img');
   var lbi = $('.lightbox-blanket .product-image img');
-  console.log($(i).attr("src"));
+  
   $(lbi).attr("src", $(i).attr("src"));  
   $(".lightbox-blanket").toggle();
-    
+
+  
+  
+
   $("#product-quantity-input").val("0");
   CalcPrice (0);
   
