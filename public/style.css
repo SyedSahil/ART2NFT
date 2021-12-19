@@ -213,8 +213,8 @@ header {
    width: 100%;
    display: flex;
    position: relative;
-   /* background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
-      url('https://i.ibb.co/jhYnq6B/charset-Ascii-Pablo-Andres-Photo.jpg'); */
+   background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), 
+      url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-print-by-vincent-van-gogh-vincent-van-gogh.jpg'); 
    background-attachment: fixed;
    background-size: cover;
    background-position: right;
